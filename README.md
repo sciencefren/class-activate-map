@@ -49,16 +49,20 @@ OUTPUT:
 >`cam_result: shape为[1, true_length]的array，每个位置表示该位置的文本片段(字/词)对于模型得到输出类别target_label的重要程度`  
 
 * `src/visual.py`包含一份可视化脚本的参考，可以用于可视化ClassActivateMap.get_text_final_cam的输出结果cam_result，该部分可灵活修改。  
-```cam_visualization(cam_arr, text_fragment_lst)```  
+```
+cam_visualization(cam_arr, text_fragment_lst)
+```  
 INPUT:  
 >`cam_arr: 即cam_result`  
 >`text_fragment_lst: 长为true_length的文本片段list，char级别为字列表，词级别为词列表`  
-OUTPUT: 
+OUTPUT:  
 可视化结果  
 
 * `src/test.py`包含一份使用`src/ClassActivateMap.py`和`src/visual.py`的示例脚本，供参考。  
 
 # 原理说明
-理论参考：
-![](https://arxiv.org/pdf/1610.02391.pdf)
-从论文可见Grad-CAM方法常见是使用在CV领域，此处我做了简单的修改适配了NLP的分类场景。
+理论参考：[Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/pdf/1610.02391.pdf "Grad-CAM")
+https://arxiv.org/pdf/1610.02391.pdf)
+从论文可见Grad-CAM方法常见是使用在CV领域，此处我做了简单的修改适配了NLP的分类场景。  
+# 展望
+目前该方法对基于CNN结构的网络有效，对于feedforward, RNN, Transformer等其他结构还未研究。
