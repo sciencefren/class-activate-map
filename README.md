@@ -30,6 +30,8 @@ a tool can visual why do CNN-based neural network work like this?
 # 使用说明
 * `src/ClassActivateMap.py`包含获取文本片段重要性的类及方法。 
 初始化类ClassActivateMap所需的输入包括：  
-```ckpt_fp: 训练保存的checkpoint文件夹，如checkpoint_textclassify_01  
+```
+ckpt_fp: 训练保存的checkpoint文件夹，如checkpoint_textclassify_01  
 label2id_dct: 类别标签名称到id的映射(dict格式），如{'教育': 0, '科技': 1, ...}  
-input_tensor_name_lst： ```
+input_tensor_name_lst： 
+```
