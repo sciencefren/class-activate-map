@@ -11,5 +11,5 @@ a tool can visual why do CNN-based neural network work like this?
 输入文本：现在那个品牌的手机比较好用. 
 top3输出类别：数码（sigmod=0.99），购物（0.58），商业（0.01）. 
 可视化结果（图中百分比及颜色深浅表示对应的字对于类别的重要性）：  
-输出类别为数码：  
+输出类别为数码：   
 ![](example_imgs/example1_数码.png)  
