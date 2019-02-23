@@ -33,5 +33,9 @@ a tool can visual why do CNN-based neural network work like this?
 ```
 ckpt_fp: 训练保存的checkpoint文件夹，如checkpoint_textclassify_01  
 label2id_dct: 类别标签名称到id的映射(dict格式），如{'教育': 0, '科技': 1, ...}  
-input_tensor_name_lst： 
+input_tensor_name_lst： 模型输入的tensor名称(list格式)，通常为图结构中定义的placeholder名称，  
+                        如['input_text:0', 'input_sentence_len:0', 'dropout_keep_prob:0']。  
+conv_layer_tensor_name2filter_size_dct: CNN层filter名称到对应filter map大小的映射(dict格式)，  
+                                        如{'conv-maxpool-1/relu:0': 1, 'conv-maxpool-3/relu:0':3, ...}  
+logits_tensor_name: 模型分类层（输出层）的tensor名称(string格式)，如'output/logit:0'  
 ```
