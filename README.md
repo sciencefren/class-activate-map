@@ -17,3 +17,12 @@ a tool can visual why do CNN-based neural network work like this?
 
 >输出类别为`商业`，影响最大的文本片段是`品牌`和`手机`.  
 ![](https://github.com/sciencefren/class-activate-map/blob/master/example_imgs/example2_商业.png)  
+
+2. 样例2.  
+`输入文本：我想上深圳大学，不知道那里天气怎么样.`.  
+`top3输出类别：教育（sigmod=0.99），就业（0.02），旅游（0.01）.`.  
+>输出类别为`教育`,影响程度最大的文本片段是`大学`.   
+![](https://github.com/sciencefren/class-activate-map/blob/master/example_imgs/example1_教育.png)  
+
+>输出类别为`旅游`，影响最大的文本片段是`天气`.  
+![](https://github.com/sciencefren/class-activate-map/blob/master/example_imgs/example1_旅游.png)  
