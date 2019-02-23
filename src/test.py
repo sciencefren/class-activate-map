@@ -1,4 +1,3 @@
-```Python
 import numpy as np
 import pickle
 
@@ -57,4 +56,3 @@ if __name__ == '__main__':
     print(res_cam)
     #可视化，因示例任务的输入包含起始符<bos>和终止符<eos>，所以分别在前后加上加上
     cam_visualization(res_cam, text_fragment_lst=['<bos>']+list(text)+['<eos>'])
-    ```
