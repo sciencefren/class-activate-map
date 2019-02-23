@@ -2,7 +2,7 @@
 a tool can visual why do CNN-based neural network work like this?
 
 # 用途
-1. 原因分析。对于文本分类任务，当神经网络（具有CNN结构）输出类别时，获得输入文本中的各个片段（如字/词）对于作出该分类的影响程度，同时可视化；  
+1. 原因分析。对于文本分类任务，当神经网络（具有CNN结构）输出类别时，获得输入文本中的各个片段（如字/词）对于作出该分类的影响程度，同时可视化。进一步可以查看某些类别是否对特定文本片段过于敏感导致过拟合，指导调参；     
 2. 模式提取。文本分类场景下，对于预测结果均为类别c的文本集合，将这些文本中对类别c影响程度大的片段作为关键模式提取出来，可供其他任务使用。  
 # 样例
 * 例子为文本多标签多分类任务（多标签即一条文本可以属于多个类别），类别包括：健康、情感、教育、数码、商业、旅游等40个类别。  
@@ -24,5 +24,7 @@ a tool can visual why do CNN-based neural network work like this?
 >输出类别为`教育`,影响程度最大的文本片段是`大学`.   
 ![](https://github.com/sciencefren/class-activate-map/blob/master/example_imgs/example1_教育.png)  
 
->输出类别为`旅游`，影响最大的文本片段是`天气`.  
+>输出类别为`旅游`，影响最大的文本片段是`深圳大学`和`天气`.  
 ![](https://github.com/sciencefren/class-activate-map/blob/master/example_imgs/example1_旅游.png)  
+
+# 使用说明
